@@ -1,0 +1,56 @@
+.photo-card {
+    width: 320px;
+    min-height: 319px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.photo-card--1 {
+    background-image: url('../../img/1.png');
+    border-top: 1px solid black;
+}
+
+.photo-card--2 {
+    background-image: url('../../img/2.png');
+}
+
+.photo-card--3 {
+    background-image: url('../../img/3.png');
+}
+
+.photo-card--4 {
+    background-image: url('../../img/4.png');
+}
+
+.photo-card--5 {
+    background-image: url('../../img/5.png');
+}
+
+.photo-card--6 {
+    background-image: url('../../img/6.png');
+}
+
+.photo-card--7 {
+    background-image: url('../../img/7.png');
+}
+
+.photo-card--8 {
+    background-image: 
+        url('../../img/8-1.png'),
+        url('../../img/8-2.png'),
+        url('../../img/8-3.png'),
+        url('../../img/8-4.png');
+
+    background-repeat: no-repeat;
+    background-position: left top, right top, left bottom, right bottom;
+}
+
+.photo-card--9 {
+    background-image: url('../../img/9.png');
+}
+
+.photo-card--10 {
+    background-image: url('../../img/10.png');
+}

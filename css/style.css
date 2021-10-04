@@ -1,0 +1,9 @@
+@import "global.css";
+@import "../css/blocks/main-nav.css";
+@import "../css/blocks/main-page.css";
+@import "../css/blocks/photo-card.css";
+@import "../css/blocks/greeting.css";
+@import "../css/blocks/text-card.css";
+@import "../css/blocks/links.css";
+@import "../css/blocks/sticky.css";
+@import "../css/blocks/hidden.css";

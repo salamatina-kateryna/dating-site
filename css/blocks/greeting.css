@@ -1,0 +1,31 @@
+.greeting {
+    position: absolute;
+    top: 80px;
+    left: 12px;
+    width: 264px;
+    padding: 24px 16px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+
+.greeting__title {
+    font-family: Roboto, Arial, sans-serif;
+    color: #FFC700;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+}
+
+.greeting__text {
+    margin-top: 8px;
+    font-family: Roboto, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+.main-nav {
+    display: flex;
+    position: fixed;
+    left: calc(50% - 160px);
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -32px;
+    width: 284px;
+    padding: 12px 18px 7px; 
+    background-color: black;
+}
+
+.main-nav__sign-button {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}

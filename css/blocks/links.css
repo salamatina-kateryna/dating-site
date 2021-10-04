@@ -1,0 +1,14 @@
+.link-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 292px;
+    margin: auto;
+    padding: 15px 14px; 
+}
+
+.link-list__item {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
