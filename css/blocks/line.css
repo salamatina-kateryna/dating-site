@@ -1,0 +1,31 @@
+.line {
+    position: absolute;
+    width: 288px;
+    height: 8px;
+    top: 0;
+    left: 0;
+    background: #F4DF96;
+    border-radius: 8px 8px 0 0;
+}
+
+.line__progress {
+    position: absolute;
+    height: 8px;
+    top: 0;
+    left: 0;
+    background: #FFC700;
+    border-radius: 16px 8px 8px 0;
+}
+
+.line__progress--first {
+    width: 96px;
+}
+
+.line__progress--second {
+    width: 192px;
+}
+
+.line__progress--third {
+    width: 288px;
+    border-radius: 8px 8px 0 0;
+}

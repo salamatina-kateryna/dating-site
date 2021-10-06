@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Task for MintyMint.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -85,6 +85,193 @@
             </div>
         </div>
 
+        <div class="overlay hidden">
+
+            <div class="question question--first hidden">
+                
+                <div class="line">
+                    <div class="line__progress line__progress--first"></div>
+                </div>
+
+                <p class="question__text">Here you can meet many young, attractive and caring women who are seeking romance on the web. Are you open to such interaction?</p>
+
+                <div class="question__wrapper">
+                    <button class="button button--failure">No</button>
+                    <button class="button">Yes</button>
+                </div>
+
+            </div>
+
+            <div class="question question--second hidden">
+                
+                <div class="line">
+                    <div class="line__progress line__progress--second"></div>
+                </div>
+
+                <p class="question__text">Our female members really like to chat with the men they are interested in. Do you agree to have deep conversations with these amazing women?</p>
+
+                <div class="question__wrapper">
+                    <button class="button button--failure">No</button>
+                    <button class="button">Yes</button>
+                </div>
+
+            </div>
+
+            <div class="question question--third hidden">
+                
+                <div class="line">
+                    <div class="line__progress line__progress--third"></div>
+                </div>
+
+                <p class="question__text">Some of our stunning members want to start a real relationship online. Are you searching for the same?</p>
+
+                <div class="question__wrapper">
+                    <button class="button button--failure">No</button>
+                    <button class="button">Yes</button>
+                </div>
+
+            </div>
+
+            <form method="POST" class="search-form search-form--first hidden">
+
+                <ul class="search-form__counter">
+                    <li class="search-form__number search-form__number--responded">1</li>
+                    <li class="search-form__number">2</li>
+                    <li class="search-form__number">3</li>
+                    <li class="search-form__number">4</li>
+                    <li class="search-form__number">5</li>
+                </ul>
+
+                <label for="first-question" class="search-form__question">I am a:</label>
+                <select id="first-question" class="search-form__answer select-input">
+                    <option val="Man seeking a woman">Man seeking a woman</option>
+                    <option val="Woman seeking a man">Woman seeking a man</option>
+                </select>
+
+                <button type="submit" class="search-form__submit button">Continue</button>
+
+            </form>
+
+            <form method="POST" class="search-form search-form--second hidden">
+
+                <ul class="search-form__counter">
+                    <li class="search-form__number search-form__number--responded">1</li>
+                    <li class="search-form__number search-form__number--responded">2</li>
+                    <li class="search-form__number">3</li>
+                    <li class="search-form__number">4</li>
+                    <li class="search-form__number">5</li>
+                </ul>
+
+                <label for="second-question" class="search-form__question">I am a:</label>
+                <input id="second-question" type="text" placeholder="Name" class="search-form__answer text-input"/>
+
+                <button type="submit" class="search-form__submit button">Continue</button>
+
+            </form>
+
+            <form method="POST" class="search-form search-form--third hidden">
+
+                <ul class="search-form__counter">
+                    <li class="search-form__number search-form__number--responded">1</li>
+                    <li class="search-form__number search-form__number--responded">2</li>
+                    <li class="search-form__number search-form__number--responded">3</li>
+                    <li class="search-form__number">4</li>
+                    <li class="search-form__number">5</li>
+                </ul>
+
+                <label class="search-form__question">Please state your date of birth</label>
+                <select class="search-form__answer select-input">
+                    <option value="" disabled selected>Month</option>
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Sep">September</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                </select>
+
+                <select class="search-form__answer select-input">
+                    <option value="" disabled selected>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <select class="search-form__answer select-input">
+                    <option value="" disabled selected>Year</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                </select>
+
+                <p class="search-form__warning">You affirm that you are at least 18 years of age or the age of majority in the jurisdiction you are accessing MIRRORNAME from, and are fully able and competent to enter MIRRORNAME</p>
+
+                <button type="submit" class="search-form__submit search-form__submit--under-warning button">Continue</button>
+
+            </form>
+
+            <form method="POST" class="search-form search-form--fourth hidden">
+
+                <ul class="search-form__counter">
+                    <li class="search-form__number search-form__number--responded">1</li>
+                    <li class="search-form__number search-form__number--responded">2</li>
+                    <li class="search-form__number search-form__number--responded">3</li>
+                    <li class="search-form__number search-form__number--responded">4</li>
+                    <li class="search-form__number">5</li>
+                </ul>
+
+                <label for="fourth-question" class="search-form__question">Please enter your valid email</label>
+                <input id="fourth-question" type="email" placeholder="Please enter your email" class="search-form__answer text-input"/>
+
+                <button type="submit" class="search-form__submit button">Continue</button>
+
+            </form>
+
+            <form method="POST" class="search-form search-form--fifth hidden">
+
+                <ul class="search-form__counter">
+                    <li class="search-form__number search-form__number--responded">1</li>
+                    <li class="search-form__number search-form__number--responded">2</li>
+                    <li class="search-form__number search-form__number--responded">3</li>
+                    <li class="search-form__number search-form__number--responded">4</li>
+                    <li class="search-form__number search-form__number--responded">5</li>
+                </ul>
+
+                <label for="fifth-question" class="search-form__question">Create a secure password</label>
+                <input id="fifth-question" type="password" placeholder="Set up solid password" class="search-form__answer password-input"/>
+                <input type="checkbox" id="check" class="search-form__checkbox visually-hidden"> 
+                <label for="check" class="search-form__agreement">I have read, understand and agree to <a href="#">Terms of Use, Privacy Policy, Payment and Refund Policy, Disclosures&Disclaimers</a>.</label>
+
+                <button type="submit" class="search-form__submit button">Continue</button>
+
+            </form>
+
+        </div>
+
     </main>
 
     <footer>
@@ -108,6 +295,8 @@
     </svg>
 
     <button class="sticky sticky--button hidden">Get started</button>
+
+    <
 
   </body>
 </html>

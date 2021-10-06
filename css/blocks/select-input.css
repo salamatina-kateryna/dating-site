@@ -1,0 +1,15 @@
+.select-input {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    box-sizing: border-box;
+    background-image: url("../../img/select-input.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 8px 6px;
+}
+
+.select-input:focus {
+    background-image: url("../../img/select-input-active.svg");
+}
+
