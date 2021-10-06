@@ -97,7 +97,7 @@
 
                 <div class="question__wrapper">
                     <button class="button button--failure">No</button>
-                    <button class="button">Yes</button>
+                    <button class="button button--conset">Yes</button>
                 </div>
 
             </div>
@@ -112,7 +112,7 @@
 
                 <div class="question__wrapper">
                     <button class="button button--failure">No</button>
-                    <button class="button">Yes</button>
+                    <button class="button button--conset">Yes</button>
                 </div>
 
             </div>
@@ -127,7 +127,7 @@
 
                 <div class="question__wrapper">
                     <button class="button button--failure">No</button>
-                    <button class="button">Yes</button>
+                    <button class="button button--conset">Yes</button>
                 </div>
 
             </div>
@@ -163,7 +163,8 @@
                 </ul>
 
                 <label for="second-question" class="search-form__question">I am a:</label>
-                <input id="second-question" type="text" placeholder="Name" class="search-form__answer text-input"/>
+                <input id="second-question" type="text" placeholder="Name" class="search-form__answer name-input text-input"/>
+                <p class="search-form__name-invalid hidden">Only letters (A - Z, a - z) are allowed</p>
 
                 <button type="submit" class="search-form__submit button">Continue</button>
 
@@ -180,7 +181,7 @@
                 </ul>
 
                 <label class="search-form__question">Please state your date of birth</label>
-                <select class="search-form__answer select-input">
+                <select class="search-form__answer select-input select-input--month" required>
                     <option value="" disabled selected>Month</option>
                     <option value="Jan">January</option>
                     <option value="Feb">February</option>
@@ -196,7 +197,7 @@
                     <option value="Dec">December</option>
                 </select>
 
-                <select class="search-form__answer select-input">
+                <select class="search-form__answer select-input select-input--day" required>
                     <option value="" disabled selected>Day</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -212,7 +213,7 @@
                     <option value="12">12</option>
                 </select>
 
-                <select class="search-form__answer select-input">
+                <select class="search-form__answer select-input select-input--year" required>
                     <option value="" disabled selected>Year</option>
                     <option value="2000">2000</option>
                     <option value="1999">1999</option>
@@ -227,6 +228,8 @@
                     <option value="1990">1990</option>
                     <option value="1989">1989</option>
                 </select>
+
+                <p class="search-form__date-invalid hidden">Please select your date of birth</p>
 
                 <p class="search-form__warning">You affirm that you are at least 18 years of age or the age of majority in the jurisdiction you are accessing MIRRORNAME from, and are fully able and competent to enter MIRRORNAME</p>
 
@@ -245,7 +248,9 @@
                 </ul>
 
                 <label for="fourth-question" class="search-form__question">Please enter your valid email</label>
-                <input id="fourth-question" type="email" placeholder="Please enter your email" class="search-form__answer text-input"/>
+                <input id="fourth-question" type="email" placeholder="Please enter your email" class="search-form__answer email-input text-input"/>
+
+                <p class="search-form__email-invalid hidden">Please enter correct email</p>
 
                 <button type="submit" class="search-form__submit button">Continue</button>
 
@@ -262,11 +267,15 @@
                 </ul>
 
                 <label for="fifth-question" class="search-form__question">Create a secure password</label>
-                <input id="fifth-question" type="password" placeholder="Set up solid password" class="search-form__answer password-input"/>
-                <input type="checkbox" id="check" class="search-form__checkbox visually-hidden"> 
-                <label for="check" class="search-form__agreement">I have read, understand and agree to <a href="#">Terms of Use, Privacy Policy, Payment and Refund Policy, Disclosures&Disclaimers</a>.</label>
+                <input id="fifth-question" type="password" placeholder="Set up solid password" class="search-form__answer password-input password-input--close"/>
+                <div class="search-form__toggle-password"></div>
+                <p class="search-form__password-invalid hidden">Your password should be 8 characters long</p>
 
-                <button type="submit" class="search-form__submit button">Continue</button>
+                <input type="checkbox" id="check" class="search-form__checkbox visually-hidden"> 
+                <label for="check" class="search-form__agreement search-form__agreement--normal">I have read, understand and agree to <a href="#">Terms of Use, Privacy Policy, Payment and Refund Policy, Disclosures&Disclaimers</a>.</label>
+                <p class="search-form__check-invalid hidden">Please accept our Terms and Privacy Policy</p>
+
+                <button type="submit" class="search-form__submit button">Sign up</button>
 
             </form>
 
@@ -290,13 +299,13 @@
 
     </footer>
 
-    <svg class="sticky sticky--arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="sticky sticky--arrow animate__animated animate__bounce" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10.9393 23.0607C11.5251 23.6464 12.4749 23.6464 13.0607 23.0607L22.6066 13.5147C23.1924 12.9289 23.1924 11.9792 22.6066 11.3934C22.0208 10.8076 21.0711 10.8076 20.4853 11.3934L12 19.8787L3.51472 11.3934C2.92893 10.8076 1.97918 10.8076 1.3934 11.3934C0.807611 11.9792 0.807611 12.9289 1.3934 13.5147L10.9393 23.0607ZM10.5 -6.5567e-08L10.5 22L13.5 22L13.5 6.5567e-08L10.5 -6.5567e-08Z" fill="white"/>
     </svg>
 
     <button class="sticky sticky--button hidden">Get started</button>
 
-    <
+    <script src="js/script.js"></script>
 
   </body>
 </html>

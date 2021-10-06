@@ -82,6 +82,41 @@
     border: 2px solid #343434;
 }
 
+.search-form__name-invalid {
+    position: absolute;
+    left: 53px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #F95656;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.search-form__date-invalid, .search-form__email-invalid, .search-form__password-invalid, .search-form__check-invalid {
+    position: absolute;
+    left: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #F95656;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.search-form__toggle-password {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 68px;
+    right: 24px;
+    background-color: transparent;
+}
+
 .search-form__submit {
     width: 100%;
     margin-top: 26px;
@@ -120,7 +155,7 @@
     font-weight: 400;
 }
 
-.search-form__agreement::before {
+.search-form__agreement--normal::before {
     position: absolute;
     width: 46px;
     height: 46px;
@@ -133,7 +168,20 @@
     box-sizing: border-box;
 }
 
-.search-form__checkbox:checked ~ .search-form__agreement::before {
+.search-form__agreement--error::before {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    content: "";
+    margin-left: -42px;
+    margin-top: -12px;
+    background-image: url("../../img/checkbox-error.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.search-form__checkbox:checked ~ .search-form__agreement--normal::before {
     background-image: 
     url("../../img/checked-mark.svg"), url("../../img/checked-back.svg");
     background-repeat: no-repeat, no-repeat;

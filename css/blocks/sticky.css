@@ -6,8 +6,6 @@
 
 .sticky--arrow {
     left: calc(50% - 12px);
-    animation: bounce;
-    animation-duration: 1s;
 }
 
 .sticky--button {
