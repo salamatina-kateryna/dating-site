@@ -17,3 +17,25 @@
     background: #ffffff;
     border: 1px solid #333333;
 }
+
+@media (min-width: 940px) {
+
+    .button:hover {
+        background-color: #FFDA58;
+    }
+
+    .button:active {
+        background-color: #F4DF96;
+        color: #C7AA43;
+    }
+
+    .button--failure:hover {
+        background-color: #FFC700;
+    }
+
+    .button--failure:active {
+        background-color: #F4DF96;
+        color: #C7AA43;
+        border: none;
+    }
+}

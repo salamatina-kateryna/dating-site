@@ -35,3 +35,33 @@
     gap: 12px;
     margin-top: 16px;
 }
+
+@media (min-width: 940px) {
+    .question {
+        top: calc(50% - 170px);
+        left: calc(50% - 230px);
+        width: 302px;
+        margin: auto;
+        padding: 40px 78px 36px;
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+
+    .question--first {
+        min-height: 164x;
+    }
+    
+    .question--second {
+        min-height: 164px;
+    }
+    
+    .question--third {
+        min-height: 140px;
+    }
+
+    .question__wrapper {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+}

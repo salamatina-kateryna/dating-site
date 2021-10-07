@@ -54,3 +54,40 @@
     line-height: 24px;
     text-align: center;
 }
+
+@media (min-width: 940px) {
+    
+    .text-card, .text-card--bonus {
+        width: 213px;
+        min-height: 213px;
+        padding: 11px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text-card__border-top {
+        width: 210px;
+        height: 57px;
+    }
+
+    .text-card__border-bottom {
+        width: 210px;
+        height: 57px;
+    }
+
+    .text-card__wrapper {
+        margin-top: 13px;
+    }
+
+    .text-card__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .text-card__description {
+        width: 203px;
+        margin: 12px auto 0;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}

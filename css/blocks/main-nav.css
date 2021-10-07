@@ -11,10 +11,47 @@
     background-color: black;
 }
 
+.main-nav__text {
+    display: none;
+}
+
 .main-nav__sign-button {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.01em;
+}
+
+@media (min-width: 940px) {
+   
+    .main-nav {
+        width: 940px;
+        padding: 13px 0;
+        left: calc(50% - 470px);
+    }
+
+    .main-nav__text {
+        display: block;
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        color: #ffffff;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .main-nav__sign-button {
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        padding: 5px 10px;
+        font-family: 'Google Sans', 'Arial', sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
 }

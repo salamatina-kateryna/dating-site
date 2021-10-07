@@ -5,3 +5,11 @@
     margin-top: 32px;
 }
 
+@media (min-width: 940px) {
+    .main-page__wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 940px;
+    }
+}

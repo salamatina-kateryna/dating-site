@@ -25,6 +25,10 @@
     min-height: 144px;
 }
 
+.search-form--fifth {
+    min-height: 204px;
+}
+
 .search-form__counter {
     display: grid;
     grid-template-columns: 36px 36px 36px 36px 36px;
@@ -187,3 +191,72 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
 }
+
+@media (min-width: 940px) {
+    .search-form {
+        left: calc(50% - 229px);
+        width: 273px;
+        margin: auto;
+        padding: 45px 93px 47px;
+    }
+
+    .search-form--first {
+        top: calc(50% - 170px);
+        min-height: 148px;
+    }
+    
+    .search-form--second {
+        top: calc(50% - 170px);
+        min-height: 148px;
+    }
+    
+    .search-form--third {
+        top: calc(50% - 266px);
+        min-height: 340px;
+    }
+    
+    .search-form--fourth {
+        top: calc(50% - 170px);
+        min-height: 148px;
+    }
+    
+    .search-form--fifth {
+        top: calc(50% - 200px);
+        min-height: 208px;
+    }
+
+    .search-form__counter {
+        grid-template-columns: 41px 41px 41px 41px 41px;
+        gap: 20px;
+        top: -21px;
+    }
+    
+    .search-form__number {
+        width: 41px;
+        height: 41px;
+        border-radius: 4px;
+        line-height: 41px;
+    }
+
+    .search-form__answer {
+        margin-top: 12px;
+        padding: 10px 12px;
+    }
+
+    .search-form__name-invalid, .search-form__date-invalid, .search-form__email-invalid, .search-form__password-invalid, .search-form__check-invalid {
+        left: 93px;
+    }
+
+    .select-input--day, .select-input--year {
+        margin-top: 8px;
+    }
+
+    .search-form__submit {
+        margin-top: 24px;
+    }
+
+    .search-form__toggle-password {
+        top: 83px;
+        right: 96px;
+    }
+} 

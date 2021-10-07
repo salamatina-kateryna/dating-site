@@ -3,12 +3,12 @@
     bottom: 16px;
 }
 
-
 .sticky--arrow {
     left: calc(50% - 12px);
 }
 
 .sticky--button {
+    display: none;
     width: 288px;
     height: 48px;
     left: calc(50% - 144px);
@@ -26,4 +26,27 @@
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+@media (min-width: 940px) {
+
+    .sticky-round {
+        position: sticky;
+        width: 48px;
+        height: 48px;
+        left: calc(50% - 24px);
+        bottom: 4px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .sticky--button {
+        display: block;
+        position: absolute;
+        width: 220px;
+        top: 348px;
+        left: calc(50% - 110px);
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

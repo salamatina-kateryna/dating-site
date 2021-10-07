@@ -29,3 +29,29 @@
     font-weight: 400;
     text-align: center;
 }
+
+@media (min-width: 940px) {
+
+    .greeting {
+        top: 61px;
+        left: 240px;
+        width: 380px;
+        padding: 48px 40px 128px;
+        background-color: black;
+        opacity: 0.8;
+        border-radius: 8px;
+    }
+
+    .greeting__title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .greeting__text {
+        width: 340px;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 28px;
+        opacity: 0.7;
+    }
+}

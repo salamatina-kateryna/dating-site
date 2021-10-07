@@ -29,3 +29,22 @@
     width: 288px;
     border-radius: 8px 8px 0 0;
 }
+
+@media (min-width: 940px) {
+    .line {
+        width: 459px;
+    }
+    
+    .line__progress--first {
+        width: 153px;
+    }
+    
+    .line__progress--second {
+        width: 306px;
+    }
+    
+    .line__progress--third {
+        width: 459px;
+        border-radius: 8px 8px 0 0;
+    }
+}

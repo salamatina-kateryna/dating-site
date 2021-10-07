@@ -5,12 +5,12 @@
 @import "../css/blocks/greeting.css";
 @import "../css/blocks/text-card.css";
 @import "../css/blocks/links.css";
+@import "../css/blocks/button.css";
 @import "../css/blocks/sticky.css";
 @import "../css/blocks/hidden.css";
 @import "../css/blocks/overlay.css";
 @import "../css/blocks/question.css";
 @import "../css/blocks/line.css";
-@import "../css/blocks/button.css";
 @import "../css/blocks/search-form.css";
 @import "../css/blocks/select-input.css";
 @import "../css/blocks/text-input.css";

@@ -3,12 +3,15 @@
 // Зацикливание анимации стрелки 
 
 const arrow = document.querySelector(`.sticky--arrow`);
+const round = document.querySelector(`.sticky-round`);
 
 setInterval(() => {
     arrow.classList.add(`animate__infinite`);
+    round.classList.add(`animate__infinite`);
     
     setTimeout(() => {
         arrow.classList.remove(`animate__infinite`);
+        round.classList.remove(`animate__infinite`);
     },1001);
 
 }, 5000);
@@ -20,7 +23,8 @@ const startButton = document.querySelector(`.sticky--button`);
 
 const showStartButton = () => {
     arrow.classList.add(`hidden`);
-    startButton.classList.remove(`hidden`);
+    round.classList.add(`hidden`);
+    startButton.style.display = `block`;
 };
 
 window.addEventListener(`scroll`, showStartButton);
@@ -86,6 +90,10 @@ document.addEventListener(`click`, (evt) => {
         if (!greeting.classList.contains(`hidden`)) {
             greeting.classList.add(`hidden`);
         };
+
+        if (!startButton.classList.contains(`hidden`)) {
+            startButton.classList.add(`hidden`);
+        }
     };
 });
 
@@ -93,6 +101,7 @@ firstButtonNo.addEventListener(`click`, () => {
     firstQuestion.classList.add(`hidden`);
     overlay.classList.add(`hidden`);
     greeting.classList.remove(`hidden`);
+    startButton.classList.remove(`hidden`);
 });
 
 firstButtonYes.addEventListener(`click`, () => {
@@ -104,6 +113,7 @@ secondButtonNo.addEventListener(`click`, () => {
     secondQuestion.classList.add(`hidden`);
     overlay.classList.add(`hidden`);
     greeting.classList.remove(`hidden`);
+    startButton.classList.remove(`hidden`);
 });
 
 secondButtonYes.addEventListener(`click`, () => {
@@ -115,6 +125,7 @@ thirdButtonNo.addEventListener(`click`, () => {
     thirdQuestion.classList.add(`hidden`);
     overlay.classList.add(`hidden`);
     greeting.classList.remove(`hidden`);
+    startButton.classList.remove(`hidden`);
 });
 
 thirdButtonYes.addEventListener(`click`, () => {
@@ -243,6 +254,7 @@ fifthSubmit.addEventListener(`click`, (evt) => {
         fifthForm.classList.add(`hidden`);
         overlay.classList.add(`hidden`);
         greeting.classList.remove(`hidden`);
+        startButton.classList.remove(`hidden`);
     }
 });
 
