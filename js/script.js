@@ -296,3 +296,30 @@ checkInput.addEventListener(`change`, () => {
         checkboxBorder.classList.add(`search-form__agreement--normal`);
     };
 });
+
+// Закрытие попапа по нажатию фона
+
+overlay.addEventListener(`click`, (evt) => {
+
+    if (evt.target.classList.contains(`overlay`)) {
+        const popups = overlay.children;
+
+        for (let popup of popups) {
+            
+            if (popup.classList.contains(`question`) || popup.classList.contains(`search-form`)) {
+                
+                if (!popup.classList.contains(`hidden`)) {
+                    popup.classList.add(`hidden`);
+                }
+
+            }
+
+        };
+
+        overlay.classList.add(`hidden`);
+        greeting.classList.remove(`hidden`);
+        startButton.classList.remove(`hidden`);
+        
+    }
+    
+});
